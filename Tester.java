@@ -12,7 +12,7 @@ public class Tester {
 
         //rational number tests
         RationalNumber x = new RationalNumber(4, 16);
-        RationalNumber y = new RationalNumber(1, 1);
+        RationalNumber y = new RationalNumber(2, 1);
         System.out.println(x.getValue());
         System.out.println(x.getNumerator());
         System.out.println(x.getDenominator());
@@ -20,5 +20,6 @@ public class Tester {
         System.out.println(x.toString());
 
         System.out.println(x.multiply(y));
+        System.out.println(x.divide(y));
     }
 }
