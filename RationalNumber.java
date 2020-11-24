@@ -18,6 +18,9 @@ public class RationalNumber extends RealNumber {
     }
 
     public double getValue() {
+        if (denominator == 0) {
+            return 0;
+        }
         return super.getValue();
     }
 
