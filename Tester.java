@@ -21,5 +21,8 @@ public class Tester {
 
         System.out.println(x.multiply(y));
         System.out.println(x.divide(y));
+        System.out.println(x.add(y));
+        System.out.println(x.subtract(y));
+
     }
 }

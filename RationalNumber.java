@@ -109,12 +109,16 @@ public class RationalNumber extends RealNumber {
      *Return a new RationalNumber that is the sum of this and the other
      */
     public RationalNumber add(RationalNumber other){
-        return null;
+        RationalNumber temp = new RationalNumber((numerator * other.getDenominator() + other.getNumerator() * denominator), (denominator * other.getDenominator()));
+        temp.reduce();
+        return temp;
     }
     /**
      *Return a new RationalNumber that this minus the other
      */
     public RationalNumber subtract(RationalNumber other){
-        return null;
+        RationalNumber temp = new RationalNumber((numerator * other.getDenominator() - other.getNumerator() * denominator), (denominator * other.getDenominator()));
+        temp.reduce();
+        return temp;
     }
 }
