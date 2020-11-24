@@ -12,11 +12,13 @@ public class Tester {
 
         //rational number tests
         RationalNumber x = new RationalNumber(4, 16);
-        RationalNumber y = new RationalNumber(0, 0);
+        RationalNumber y = new RationalNumber(1, 1);
         System.out.println(x.getValue());
         System.out.println(x.getNumerator());
         System.out.println(x.getDenominator());
         System.out.println(x.equals(y));
         System.out.println(x.toString());
+
+        System.out.println(x.multiply(y));
     }
 }
