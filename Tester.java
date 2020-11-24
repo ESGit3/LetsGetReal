@@ -11,7 +11,7 @@ public class Tester {
         System.out.println(a.subtract(b));
 
         //rational number tests
-        RationalNumber x = new RationalNumber(34, 0);
+        RationalNumber x = new RationalNumber(4, 15);
         System.out.println(x.getValue());
         System.out.println(x.getNumerator());
         System.out.println(x.getDenominator());
