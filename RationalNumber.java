@@ -7,23 +7,29 @@ public class RationalNumber extends RealNumber {
      *@param nume the numerator
      *@param deno the denominator
      */
-    public RationalNumber(int nume, int deno){
-        super(0.0);//this value is ignored!
+    public RationalNumber(int nume, int deno) {
+        super((double)nume / (double)deno);
+        if (deno == 0) {
+            numerator = 0;
+            denominator = 1;
+        }
+        numerator = nume;
+        denominator = deno;
     }
 
-    public double getValue(){
-        return 0.0;
+    public double getValue() {
+        return super.getValue();
     }
 
 
     public int getNumerator(){
-        return 0;
+        return numerator;
     }
     /**
      *@return the denominator
      */
     public int getDenominator(){
-        return 0;
+        return denominator;
     }
     /**
      *@return a new RationalNumber that has the same numerator
