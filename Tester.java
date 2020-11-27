@@ -17,7 +17,7 @@ public class Tester {
         System.out.println(x.getNumerator());
         System.out.println(x.getDenominator());
         System.out.println(x.equals(y));
-        System.out.println(x.toString());
+        System.out.println(y.toString());
 
         System.out.println(x.multiply(y));
         System.out.println(x.divide(y));
