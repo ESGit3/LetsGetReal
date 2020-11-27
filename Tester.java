@@ -2,7 +2,7 @@ public class Tester {
     public static void main(String[] args) {
         //real number tests
         RealNumber a = new RealNumber(16.0);
-        RealNumber b = new RealNumber(2.0);
+        RealNumber b = new RealNumber(16.0);
 
         System.out.println(a.equals(b));
         System.out.println(a.add(b));
@@ -24,5 +24,7 @@ public class Tester {
         System.out.println(x.add(y));
         System.out.println(x.subtract(y));
 
+        //abstract number class
+        System.out.println(a.compareTo(b));
     }
 }
